@@ -12,3 +12,15 @@ Code and build Status
 [![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/WissamSawah/Weather/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/WissamSawah/Weather/?branch=master)
 [![Code Intelligence Status](https://scrutinizer-ci.com/g/WissamSawah/Weather/badges/code-intelligence.svg?b=master)](https://scrutinizer-ci.com/code-intelligence)
 [![Build Status](https://scrutinizer-ci.com/g/WissamSawah/Weather/badges/build.png?b=master)](https://scrutinizer-ci.com/g/WissamSawah/Weather/build-status/master)
+
+
+License
+----------------
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)  
+
+This software carries a MIT license. See [LICENSE.txt](LICENSE.txt) for details.
+
+```
+ .  
+..:  Copyright (c) 2020 Wissam Sawah (wesam.sawah@me.com)
+```
