@@ -6,9 +6,9 @@ if (empty($di->session->get("login"))) {
     $urlToRegister = url("user/create");
     ?>
     <p>
-        <h1>Du måste vara inloggad för att nå denna sida.</h1>
-        <p><button class="btn green" name="button" onclick="window.location.href = '<?= $urlToLogin ?>';">Logga in</button></p>
-        <p><button class="btn blue" name="button" onclick="window.location.href = '<?= $urlToRegister ?>';">Registrera</button></p>
+        <h1>You have to login to access this page.</h1>
+        <p><button class="btn green" name="button" onclick="window.location.href = '<?= $urlToLogin ?>';">Login</button></p>
+        <p><button class="btn blue" name="button" onclick="window.location.href = '<?= $urlToRegister ?>';">Signup</button></p>
     </p>
     <?php
 } else {
@@ -21,13 +21,13 @@ if (empty($di->session->get("login"))) {
         <h2> User Information </h2>
          <img class="profileimg" style="width: 100px;" alt="<?= $user->acronym ?>" src="https://www.gravatar.com/avatar/0c4cfef9aae14fe22e081aa62234df88?s=100&d=identicon&r=PG<?=md5(strtolower(trim($di->session->get("user"))));?>"/></br></br>
          <a class="icons" href="<?="user/update/{$user->id}"?>" title="Edit this information"><i class="fas fa-user-edit"></i></a>
-        <p><b>Acronym:</b> <?= $user->acronym ?></p>
-        <p><b>First Name:</b> <?= $user->firstname ?></p>
-        <p><b>Last Name:</b> <?= $user->lastname ?></p>
-        <p><b>Email/UserName:</b> <?= $di->session->get("user") ?></p>
+        <p>Acronym: <?= $user->acronym ?></p>
+        <p>First Name: <?= $user->firstname ?></p>
+        <p>Last Name: <?= $user->lastname ?></p>
+        <p>Email/UserName: <?= $di->session->get("user") ?></p>
 
         <form class="" action="user/logout" method="post">
-            <input class="btn red fullwidth" type="submit" name="" value="Logga ut">
+            <input class="btn red fullwidth" type="submit" name="" value="Logout">
         </form>
     </div>
 

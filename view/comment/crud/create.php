@@ -10,7 +10,7 @@ namespace Anax\View;
 $items = isset($items) ? $items : null;
 // Create urls for navigation
 $urlToViewItems = url("comment");
-?><h1>Create a item</h1>
+?><h1>Write Comment</h1>
 
 <?= $form ?>
 

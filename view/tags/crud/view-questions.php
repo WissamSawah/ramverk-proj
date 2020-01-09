@@ -32,13 +32,13 @@ $urlToRegister = url("user/create");
             <div class="grid-item rank">
                 <p>Answers: <?= count($answer) ?></p>
                 <p style="border-bottom:unset;" class="author">Posted at: <?= $question->created ?> </p>
-               
+
             <div class="tags">
                 <?php $tags = explode(" ", $question->tags); ?>
                 <?php foreach ($tags as $tag) : ?>
                     <?php $link=htmlentities($tag) ?>
-                     <i style="color: #9d873f; padding: 4px;
-                  font-size: 20px;" class="fa fa-tags ml-5"<a href=<?= url("tags/questions/{$link}") ?> class="tag"><?= $tag ?></a></i>
+                     <i style="color:  #9d873f; padding: 4px;
+                  font-size: 20px;" class="fa fa-tags ml-5"></i><a href=<?= url("tags/questions/{$link}") ?> class="tag"><?= $tag ?></a>
                 <?php endforeach; ?>
             </div>
         </div>

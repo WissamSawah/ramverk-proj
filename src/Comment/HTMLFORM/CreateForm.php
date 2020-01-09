@@ -70,10 +70,16 @@ class CreateForm extends FormModel
             $answer->setDb($this->di->get("dbqb"));
             $answer->findById($comment->answerID);
             $this->callbackID = $answer->question_id;
+            $comment->created  = $this->di->session->get("created");
+            
         } else {
             $comment->questionID = $this->form->value("id");
             $this->callbackID = $comment->questionID ;
+            $comment->created  = $this->di->session->get("created");
+
         }
+        $comment->created  = $this->di->session->get("created");
+
         $comment->save();
         return true;
     }

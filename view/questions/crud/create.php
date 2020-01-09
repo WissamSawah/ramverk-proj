@@ -10,10 +10,10 @@ namespace Anax\View;
 $items = isset($items) ? $items : null;
 // Create urls for navigation
 $urlToViewItems = url("questions");
-?><h1>Ny fråga</h1>
+?><h1>New question</h1>
 
 <?= $form ?>
 
 <p>
-    <a href="<?= $urlToViewItems ?>">Tillbaka till frågor</a>
+    <a href="<?= $urlToViewItems ?>">Back to questions</a>
 </p>

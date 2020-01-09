@@ -10,7 +10,7 @@ namespace Anax\View;
 $item = isset($item) ? $item : null;
 // Create urls for navigation
 $urlToView = url("user");
-?><h1>Uppdatera</h1>
+?><h1>Update</h1>
 
 <?= $form ?>
 

@@ -63,6 +63,8 @@ class CreateForm extends FormModel
         $answer->userID = $this->form->value("user");
         $answer->question_id = $this->form->value("question");
         $answer->username = $this->di->session->get("username");
+        $answer->created = date('Y-m-d H:i');
+
         $answer->save();
         return true;
     }

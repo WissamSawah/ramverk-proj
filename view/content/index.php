@@ -59,7 +59,7 @@ If your question generally covers...</p>
                 <?php $tagsQuestion = explode(" ", $question->tags); ?>
                 <?php foreach ($tagsQuestion as $tag) : ?>
                     <?php $link=htmlentities($tag) ?>
-                     <p class="tags4">Tags: <a href=<?= url("tags/questions/{$link}") ?> class="tag"><i class="fa fa-tags ml-5"> <?= $tag ?></a></i></p>
+                     <p class="tags4">Tags: <a href=<?= url("tags/questions/{$link}") ?> class="tag"><i class="fa fa-tags ml-5"></i> <?= $tag ?></a></p>
                  </div>
 
 
@@ -72,7 +72,7 @@ If your question generally covers...</p>
 <?php foreach ($tags as $tag) : ?>
     <?php $link=htmlentities($tag->tag) ?>
     <i style="color: #db1d1d; padding: 4px;
-font-size: 23px;" class="fa fa-tags ml-5"> <a href=<?= url("tags/questions/{$link}") ?> class="tag"><?= $tag->tag ?></a></i>
+font-size: 23px;" class="fa fa-tags ml-5"></i> <a href=<?= url("tags/questions/{$link}") ?> class="tag"><?= $tag->tag ?></a>
 <?php endforeach; ?>
 </ul>
 

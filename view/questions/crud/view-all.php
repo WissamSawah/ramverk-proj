@@ -28,6 +28,8 @@ $urlToRegister = url("user/create");
     <p>
         <button class="btn fullwidth" name="button" onclick="window.location.href = '<?= $urlToCreate ?>';">New Question</button>
     </p>
+    <h1 style="text-align:center;">All Questions</h1>
+
 <?php endif; ?>
 <?php foreach ($questions as $question) : ?>
     <?php $answer = $answers->findAllWhere("question_id = ?", $question->id); ?>
@@ -52,8 +54,8 @@ $urlToRegister = url("user/create");
 
                 <?php foreach ($tags as $tag) : ?>
                     <?php $link=htmlentities($tag) ?>
-                     <i style="color: #9d873f; padding: 4px;
-                  font-size: 20px;" class="fa fa-tags ml-5"><a href=<?= url("tags/questions/{$link}") ?> class="tag"><?= $tag?></a></i>
+                     <i style="color: #db1d1d; padding: 4px;
+                  font-size: 20px;" class="fa fa-tags ml-5"></i><a href=<?= url("tags/questions/{$link}") ?> class="tag"><?= $tag?></a>
                 <?php endforeach; ?>
             </div>
         </div>

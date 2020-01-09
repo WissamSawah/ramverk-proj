@@ -18,10 +18,10 @@ if (!$tags) : ?>
     return;
 endif;
 ?>
-<ul class="tags">
+<ul class="tags33">
     <?php foreach ($tags as $tag) : ?>
         <?php $link=htmlentities($tag->tag) ?>
          <li style="text-align:center;"> <i style="color: #9d873f; padding: 4px;
-      font-size: 20px;" class="fa fa-tags ml-5"><a href=<?= url("tags/questions/{$link}") ?> class="tag"><?= $tag->tag ?></a></li></i>
+      font-size: 20px;" class="fa fa-tags ml-5"></i><a href=<?= url("tags/questions/{$link}") ?> class="tag"><?= $tag->tag ?></a></li>
     <?php  endforeach; ?>
 </ul>

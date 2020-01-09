@@ -27,7 +27,7 @@ if (empty($di->session->get("login"))) {
         <p><b>Email/UserName:</b> <?= $di->session->get("user") ?></p>
 
         <form class="" action="user/logout" method="post">
-            <input class="btn red fullwidth" type="submit" name="" value="Logga ut">
+            <input class="btn red fullwidth" type="submit" name="" value="Logout">
         </form>
     </div>
 
@@ -41,16 +41,20 @@ if (empty($di->session->get("login"))) {
         <h4>Questions:  <?= count($userQuestions) ?></h4>
         <?php foreach ($userQuestions as $userQuestions) : ?>
             <p><a href="<?= url("questions/view/{$userQuestions->id}"); ?>"><?=  $userQuestions->title ?></a></p>
+            <p class="author">Posted at: <?= $userQuestions->created ?> </p>
+
         <?php endforeach; ?>
         <h4>Answers: <?= count($userAnswers) ?></h4>
         <?php foreach ($userAnswers as $userAnswers) : ?>
             <p><a href="<?= url("questions/view/{$userAnswers->question_id}"); ?>"><?=  $userAnswers->answer ?></a></p>
+
 
         <?php endforeach; ?>
         <h4>Comments: <?= count($userComments) ?></h4>
         <?php foreach ($userComments as $userComments) : ?>
             <?php $link = $userComments->questionID ?: $userComments->answerID; ?>
             <p><a href="<?= url("questions/view/{$link}"); ?>"><?= $userComments->comment ?></a></p>
+
         <?php endforeach; ?>
     </div>
 </div>
