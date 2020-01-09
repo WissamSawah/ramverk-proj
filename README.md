@@ -9,3 +9,6 @@ Code and build Status
 ----------------------------------
 [![Build Status](https://travis-ci.org/WissamSawah/ramverk-proj.svg?branch=master)](https://travis-ci.org/WissamSawah/ramverk-proj)
 [![CircleCI](https://circleci.com/gh/WissamSawah/ramverk-proj.svg?style=svg)](https://circleci.com/gh/WissamSawah/ramverk-proj)
+[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/WissamSawah/Weather/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/WissamSawah/Weather/?branch=master)
+[![Code Intelligence Status](https://scrutinizer-ci.com/g/WissamSawah/Weather/badges/code-intelligence.svg?b=master)](https://scrutinizer-ci.com/code-intelligence)
+[![Build Status](https://scrutinizer-ci.com/g/WissamSawah/Weather/badges/build.png?b=master)](https://scrutinizer-ci.com/g/WissamSawah/Weather/build-status/master)
