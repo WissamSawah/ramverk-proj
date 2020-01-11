@@ -14,6 +14,14 @@ Code and build Status
 [![Build Status](https://scrutinizer-ci.com/g/WissamSawah/Weather/badges/build.png?b=master)](https://scrutinizer-ci.com/g/WissamSawah/Weather/build-status/master)
 
 
+Installation
+ ----------------------------------
+1. `clone the repo`
+2. Run `composer install`
+3. Run setup.sql file (/sql/setup.sql)
+
+
+
 License
 ----------------
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)  
