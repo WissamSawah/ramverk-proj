@@ -32,16 +32,12 @@ class UpdateForm extends FormModel
                     "readonly" => true,
                     "value" => $answer->id,
                 ],
-                "column1" => [
-                    "type" => "text",
+                "answer" => [
+                    "type" => "textarea",
                     "validation" => ["not_empty"],
-                    "value" => $answer->column1,
+                    "value" => $answer->answer,
                 ],
-                "column2" => [
-                    "type" => "text",
-                    "validation" => ["not_empty"],
-                    "value" => $answer->column2,
-                ],
+
                 "submit" => [
                     "type" => "submit",
                     "value" => "Save",
@@ -78,8 +74,7 @@ class UpdateForm extends FormModel
         $answer = new Answer();
         $answer->setDb($this->di->get("dbqb"));
         $answer->find("id", $this->form->value("id"));
-        $answer->column1 = $this->form->value("column1");
-        $answer->column2 = $this->form->value("column2");
+        $answer->answer = $this->form->value("answer");
         $answer->save();
         return true;
     }

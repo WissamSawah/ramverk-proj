@@ -7,7 +7,7 @@ $filter = new \Anax\TextFilter\TextFilter;
     <div class="inner-wrap inner-wrap-flash">
         <div class="row">
             <div class="region-flash">
-                <img class="" src="image/theme/movie.jpg?width=1000&height=300&crop-to-fit&area=0,0,0,0">
+                <img class="" src="image/theme/main-logo.png?width=1000&height=300&crop-to-fit&area=0,0,0,0">
             </div>
         </div>
     </div>
@@ -51,8 +51,7 @@ If your question generally covers...</p>
             </a>
             <p style="margin-bottom:0;">Answers:
             <b style="color:#26df26;"><?= count($answer) ?></b></p>
-            <?php $userComments = $comment->findAll() ?>
-            <p>Comments: <b style="color:#26df26;"><?= count($userComments) ?></b></p>
+
 
 
             <div class="tags">
@@ -67,6 +66,7 @@ If your question generally covers...</p>
 
         </div>
 <?php endforeach; ?>
+<div class="mostp">
 <h2 style="text-align: center;">Most popular tags</h2>
 <ul style="text-align: center;" class="tags">
 <?php foreach ($tags as $tag) : ?>
@@ -75,6 +75,8 @@ If your question generally covers...</p>
 font-size: 23px;" class="fa fa-tags ml-5"></i> <a href=<?= url("tags/questions/{$link}") ?> class="tag"><?= $tag->tag ?></a>
 <?php endforeach; ?>
 </ul>
+</div>
+
 
 <h2 style="text-align: center;">Most active users</h2>
 

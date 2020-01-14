@@ -72,10 +72,9 @@ class UpdateForm extends FormModel
         $comment = new Comment();
         $comment->setDb($this->di->get("dbqb"));
         $comment->find("id", $this->form->value("id"));
-        $comment->column1 = $this->form->value("column1");
-        $comment->column2 = $this->form->value("column2");
+        $comment->comment = $this->form->value("comment");
         $comment->save();
         return true;
     }
-   
+
 }
